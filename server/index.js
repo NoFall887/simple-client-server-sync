@@ -12,7 +12,7 @@ const pool = new Pool({
 });
 
 app.use(express.json());
-app.use(cors({ credentials: true, origin: "http://localhost:3300" }));
+app.use(cors({ origin: "http://localhost:3300" }));
 
 const userData = {
   username: "admin",

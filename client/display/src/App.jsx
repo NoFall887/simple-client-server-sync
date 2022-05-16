@@ -35,7 +35,6 @@ function App() {
   function fetchServer() {
     axios
       .get("http://localhost:5000/get-sync-data", {
-        withCredentials: true,
         headers: {
           Authorization: "Bearer " + window.localStorage.getItem("auth"),
         },
