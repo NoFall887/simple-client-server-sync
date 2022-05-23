@@ -6,7 +6,7 @@ from flask_mysqldb import MySQL
 
 
 load_dotenv()
-app = Flask(__name__, static_url_path="", static_folder="display/build")
+app = Flask(__name__, static_url_path="", static_folder="display/build/")
 CORS(app)
 
 app.config['MYSQL_HOST'] = os.getenv('DB_HOST')
